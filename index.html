@@ -1,76 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="=X-UA-Compatible"
-        content="IE=edge">
-        <meta name="viewport"content="width=device-width,initial-scale=1.0">
-        <title>Discount Store</title>
-        <style>
-            .discount-popup {
-                display: none;
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background-color: #f9f9f9;
-                padding: 20px;
-                border: 2px solid #333;
-                z-index: 1000;
-            }
-            .btn-select {
-                background-color: #4CAF50;
-                color: white;
-                padding: 10px 20px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Welcome to our Online Discount Store!</h1>
-        <h2>Products Available:</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiftmarketplace</title>
+    <style>
+        /* CSS Styles */
+        /* Define your CSS styles here */
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
         <ul>
-            <li>Tissues <button class="btn-select">Select</button></li>
-            <li>Lighters (plain or graffiti) <button class="btn-select">Select</button></li>
-            <li>Books <button class="btn-select">Select</button></li>
-            <li>Pens <button class="btn-select">Select</button></li>
-            <li>Roll On <button class="btn-select">Select</button></li>
-            <li>Cables (USB Type B & C,AUX,HDMI,Coaxial,Ethernet,Basic Wires) <button class="btn-select">Select</button></li>
-            <li>Woofers and Subwoofers <button class="btn-select">Select</button></li>
-            <li>Soaps <button class="btn-select">Select</button></li>
-            <li>Headphones <button class="btn-select">Select</button></li>
-            <li>Earphones & Earbuds <button class="btn-select">Select</button></li>
-            <li>Lotions,Oils,Deodarants,Sprays <button class="btn-select">Select</button></li>
-            <li>Phone Cases <button class="btn-select">Select</button></li>
-            <li>Tripods <button class="btn-select">Select</button></li>
-            <li>Socks <button class="btn-select">Select</button></li>
-            <li>LED lights <button class="btn-select">Select</button></li>
-            <li>Bangles <button class="btn-select">Select</button></li>
-            <li>Stickers (Phone & Laptop Size) <button class="btn-select">Select</button></li>
-            <li>Plates & Kitchen Items <button class="btn-select">Select</button></li>
-            <li>Basins, Buckets, Mops <button class="btn-select">Select</button></li>
-            <li>Njugu <button class="btn-select">Select</button></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#offerings">Offerings</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#shop-now">Shop Now</a></li>
         </ul>
-        <p>Enjoy shopping with us and take advantage of our lower prices and free delivery!</p>
-        <div class="discount-popup">
-            <h3>Discount from the Supermarket!</h3>
-            <p>Get amazing discounts on selected items!</p>
-            <p>Banner: <strong>Sw1ft Marketplace</strong></p>
-        </div>
-        <script>
-            const buttons = document.querySelectorAll('.btn-select');
-            const popup = document.querySelector('.discount-popup');
-            
-            buttons.forEach(button => {
-                button.addEventListener('click', () => {
-                    popup.style.display = 'block';
-                });
-            });
-        </script>
-    </body>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>swiftmarketplace</h1>
+        <p>Discover Affordable Shopping</p>
+        <p>With years of experience in the retail industry, we have honed our skills in sourcing the best deals and delivering exceptional value to our customers. Our expertise allows us to curate a selection of products that cater to your everyday needs at unbeatable prices.</p>
+        <p>Our driving motivation at swift marketplace is to make shopping budget-friendly and hassle-free for all. We prioritize honesty, transparency, and customer satisfaction in all our interactions, ensuring a positive experience for every shopper.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our commitment to quality and affordability has earned us the trust of many happy shoppers.</p>
+        <h3>Our Core Values</h3>
+        <ul>
+            <li>Affordability</li>
+            <li>Customer Satisfaction</li>
+            <li>Transparency</li>
+        </ul>
+    </section>
+
+    <!-- Offerings Section -->
+    <section id="offerings">
+        <h2>Offerings</h2>
+        <!-- Add your offerings here -->
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <!-- Add your blog posts here -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <!-- Add contact information and form here -->
+    </section>
+
+    <!-- Shop Now Section -->
+    <section id="shop-now">
+        <h2>Shop Now</h2>
+        <p>Discover Amazing Deals Today</p>
+        <button><a href="#">Shop Now</a></button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; swiftmarketplace</p>
+    </footer>
+</body>
 </html>
+
