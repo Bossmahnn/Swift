@@ -2,42 +2,32 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="=X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="=X-UA-Compatible"
+        content="IE=edge">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
         <title>Discount Store</title>
         <style>
-            body {
-                font-family: Arial, sans-serif;
+            .discount-popup {
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 background-color: #f9f9f9;
-                margin: 0;
-                padding: 0;
+                padding: 20px;
+                border: 2px solid #333;
+                z-index: 1000;
             }
-            h1 {
-                color: #333;
+            .btn-select {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
                 text-align: center;
-                margin-top: 20px;
-            }
-            h2 {
-                color: #555;
-                text-align: center;
-            }
-            ul {
-                list-style-type: none;
-                padding: 0;
-                margin: 0 auto;
-                max-width: 600px;
-            }
-            li {
-                background-color: #fff;
-                padding: 10px;
-                margin: 5px 0;
-                border-radius: 5px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-            p {
-                text-align: center;
-                color: #777;
-                margin-top: 20px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
             }
         </style>
     </head>
@@ -45,27 +35,42 @@
         <h1>Welcome to our Online Discount Store!</h1>
         <h2>Products Available:</h2>
         <ul>
-            <li>Tissues</li>
-            <li>Lighters (plain or graffiti)</li>
-            <li>Books</li>
-            <li>Pens</li>
-            <li>Roll On</li>
-            <li>Cables (USB Type B & C, AUX, HDMI, Coaxial, Ethernet, Basic Wires)</li>
-            <li>Woofers and Subwoofers</li>
-            <li>Soaps</li>
-            <li>Headphones</li>
-            <li>Earphones & Earbuds</li>
-            <li>Lotions, Oils, Deodorants, Sprays</li>
-            <li>Phone Cases</li>
-            <li>Tripods</li>
-            <li>Socks</li>
-            <li>LED lights</li>
-            <li>Bangles</li>
-            <li>Stickers (Phone & Laptop Size)</li>
-            <li>Plates & Kitchen Items</li>
-            <li>Basins, Buckets, Mops</li>
-            <li>Njugu</li>
+            <li>Tissues <button class="btn-select">Select</button></li>
+            <li>Lighters (plain or graffiti) <button class="btn-select">Select</button></li>
+            <li>Books <button class="btn-select">Select</button></li>
+            <li>Pens <button class="btn-select">Select</button></li>
+            <li>Roll On <button class="btn-select">Select</button></li>
+            <li>Cables (USB Type B & C,AUX,HDMI,Coaxial,Ethernet,Basic Wires) <button class="btn-select">Select</button></li>
+            <li>Woofers and Subwoofers <button class="btn-select">Select</button></li>
+            <li>Soaps <button class="btn-select">Select</button></li>
+            <li>Headphones <button class="btn-select">Select</button></li>
+            <li>Earphones & Earbuds <button class="btn-select">Select</button></li>
+            <li>Lotions,Oils,Deodarants,Sprays <button class="btn-select">Select</button></li>
+            <li>Phone Cases <button class="btn-select">Select</button></li>
+            <li>Tripods <button class="btn-select">Select</button></li>
+            <li>Socks <button class="btn-select">Select</button></li>
+            <li>LED lights <button class="btn-select">Select</button></li>
+            <li>Bangles <button class="btn-select">Select</button></li>
+            <li>Stickers (Phone & Laptop Size) <button class="btn-select">Select</button></li>
+            <li>Plates & Kitchen Items <button class="btn-select">Select</button></li>
+            <li>Basins, Buckets, Mops <button class="btn-select">Select</button></li>
+            <li>Njugu <button class="btn-select">Select</button></li>
         </ul>
         <p>Enjoy shopping with us and take advantage of our lower prices and free delivery!</p>
+        <div class="discount-popup">
+            <h3>Discount from the Supermarket!</h3>
+            <p>Get amazing discounts on selected items!</p>
+            <p>Banner: <strong>Sw1ft Marketplace</strong></p>
+        </div>
+        <script>
+            const buttons = document.querySelectorAll('.btn-select');
+            const popup = document.querySelector('.discount-popup');
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    popup.style.display = 'block';
+                });
+            });
+        </script>
     </body>
 </html>
